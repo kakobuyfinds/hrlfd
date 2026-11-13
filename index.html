@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="theme-color" content="#142738">
+  <title>FansBuy spreadsheet: Produktkategorien, Größen und QC</title>
+  <meta name="description" content="FansBuy spreadsheet auf Deutsch: Entdecke zehn Produktkategorien und erfahre, wie du Größen, Varianten, QC-Fotos und Versandkosten vergleichst.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="de_DE">
+  <meta property="og:title" content="FansBuy spreadsheet: Produktkategorien, Größen und QC">
+  <meta property="og:description" content="Zehn Produktkategorien und eine praktische Checkliste für Größen, Varianten, QC-Fotos und Versand.">
+  <style>
+    :root{color-scheme:light;--ink:#142738;--paper:#fbf7ef;--sand:#ebdcc5;--line:#cbbba5;--accent:#7a3425}
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--paper);color:var(--ink);font:1rem/1.65 system-ui,sans-serif}
+    .wrap{width:min(72rem,calc(100% - 2rem));margin-inline:auto}
+    header,footer{background:var(--ink);color:#fff}
+    header .wrap,footer .wrap{padding-block:1rem}
+    a{color:inherit;text-underline-offset:.22em}
+    :focus-visible{outline:3px solid #bb632b;outline-offset:4px}
+    h1,h2,h3{line-height:1.12;margin:0 0 .7em}
+    h1,h2{font-family:Georgia,serif}
+    h1{font-size:clamp(2.4rem,6vw,5rem);overflow-wrap:anywhere}
+    h2{font-size:clamp(1.6rem,4vw,2.45rem)}
+    p{margin:.5rem 0 1rem}
+    section{padding-block:clamp(1.7rem,5vw,3.8rem)}
+    .categories{background:var(--sand);padding-block:1.25rem}
+    .categories h2{font:700 1.15rem system-ui,sans-serif;margin-bottom:.65rem}
+    .categories ul{list-style:none;margin:0;padding:0;display:grid;gap:.4rem;grid-template-columns:repeat(auto-fit,minmax(min(9rem,100%),1fr))}
+    .categories a{display:block;padding:.55rem .7rem;background:var(--paper);border:1px solid var(--line);border-radius:.35rem;font-size:.94rem}
+    .hero,.articles{display:grid;gap:clamp(1rem,4vw,3rem);grid-template-columns:repeat(2,minmax(0,1fr))}
+    .hero{align-items:center}
+    .button{display:inline-block;padding:.65rem 1rem;border-radius:.35rem;background:var(--accent);color:#fff;font-weight:700}
+    figure{margin:0}
+    img{display:block;width:100%;height:auto;background:#f1ede7}
+    .hero img{aspect-ratio:4/3;object-fit:contain}
+    figcaption{padding:.55rem 0;font-size:.9rem}
+    .gallery{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1rem}
+    .gallery img{aspect-ratio:1;object-fit:contain}
+    .rule{border-top:1px solid var(--line)}
+    article,details{border:1px solid var(--line);border-radius:.4rem;padding:1rem}
+    details+details{margin-top:.5rem}
+    summary{cursor:pointer;font-weight:700}
+    details p{margin-bottom:0}
+    @media(max-width:45rem){.hero,.articles{grid-template-columns:1fr}.gallery{grid-template-columns:repeat(2,minmax(0,1fr))}}
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "name": "FansBuy spreadsheet: Produktkategorien, Größen und QC",
+        "description": "FansBuy spreadsheet auf Deutsch: Entdecke zehn Produktkategorien und erfahre, wie du Größen, Varianten, QC-Fotos und Versandkosten vergleichst.",
+        "inLanguage": "de"
+      },
+      {
+        "@type": "FAQPage",
+        "inLanguage": "de",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Was ist ein FansBuy spreadsheet?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ein FansBuy spreadsheet ist eine nach Kategorien geordnete Sammlung von Produktverweisen. Sie dient als Ausgangspunkt für den Vergleich von Artikeln, Varianten und verfügbaren Produktinformationen."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Wie prüfe ich, ob ein Produktlink zur richtigen Variante führt?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Öffne die Produktseite und vergleiche Modell, Farbe, Größe und Artikelnummer. Prüfe die ausgewählte Variante erneut, wenn sich beim Wechsel der Größe das Foto oder die Beschreibung ändert."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Was kann ich auf QC-Fotos erkennen?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "QC-Fotos können sichtbare Merkmale wie Nähte, Aufdrucke und die Sohlenform zeigen. Ein Foto allein reicht für einen Echtheitsnachweis nicht aus."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Wovon hängen die Versandkosten nach Deutschland ab?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Zielland, Versanddienst, Gewicht und Paketmaße beeinflussen die Versandkosten. Prüfe vor der Zahlung die aktuelle Schätzung und welche weiteren Abgaben oder Gebühren im Gesamtbetrag enthalten sind."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+<link rel="canonical" href="https://kakobuyfinds.github.io/hrlfd/">
+</head>
+<body>
+  <!-- index.html
+  Recherche: Die erste Bing-Ergebnisseite war nicht abrufbar. Die Themenauswahl
+  beruht auf zehn anderweitig gefundenen Seiten, ohne bestätigte Bing-Platzierung.
+  fansbuy.net/spreadsheet: Kategorien und Passform bei Trikots
+  fansbuysheets.net: Katalogsuche und Versand
+  fansbuylists.com: Produktbilder und QC-Fotos
+  fansbuy.co.uk/catalog/: Produktkarten und Auswahl nach Kategorie
+  mixfittio.com/en/spreadsheet/fansbuy: Filter und Lagerfotos
+  fansbuy.net/guides: Kaufablauf und Prüfung von Produktlinks
+  one-to-oneyupoo.com/spreadsheets/fansbuy/: Artikelnummern und Produktquellen
+  maisonlooks.com/en/spreadsheet/fansbuy: Katalog mit Marktplatzquellen
+  usfansyupoo.com/agents/fansbuy/: Verwendung von Produktverweisen
+  fansbuys.net: Suche nach Produktnamen und Kategoriezuteilung
+
+  Nebenkeywords: FansBuy Produktkatalog; FansBuy Kaufanleitung;
+  FansBuy QC-Fotos; FansBuy Versand nach Deutschland.
+
+  Suchphrasen: FansBuy spreadsheet auf Deutsch; FansBuy spreadsheet für Anfänger;
+  FansBuy Produktlinks prüfen; FansBuy Artikelnummer vergleichen;
+  FansBuy Sneaker nach Größe finden; Sneaker-Einlegesohle in Zentimetern messen;
+  EU-Schuhgröße mit Herstellertabelle vergleichen; T-Shirt flach ausmessen;
+  Hoodie-Brustweite richtig messen; Ärmellänge bei Jacken vergleichen;
+  Bundweite bei Hosen messen; Kopfumfang für Caps messen;
+  Trikot für lockeren Sitz auswählen; Maße für Oberteil und Hose im Set prüfen;
+  Innenumfang eines Armreifs vergleichen; QC-Fotos von Sneakern prüfen;
+  Nähte auf Produktfotos kontrollieren; Farbe auf Lagerfotos vergleichen;
+  richtige Produktvariante anhand der SKU erkennen;
+  Paketmaße für Versandkosten prüfen; Volumengewicht beim Versand vergleichen;
+  Versandkosten nach Deutschland schätzen; Lieferoptionen nach Österreich vergleichen;
+  Versand in die Schweiz vor der Bestellung prüfen.
+  -->
+  <header>
+    <div class="wrap"><a href="https://www.cafans.com">CAFANS · Produktkatalog</a></div>
+  </header>
+  <main>
+    <nav class="categories" aria-labelledby="kategorien">
+      <div class="wrap">
+        <h2 id="kategorien">Produktkategorien</h2>
+        <ul>
+          <li><a href="https://cafans.com/category-911-Shoes.html">Schuhe</a></li>
+          <li><a href="https://cafans.com/category-912-Hoodies%2FSweaters.html">Hoodies &amp; Pullover</a></li>
+          <li><a href="https://cafans.com/category-913-T-Shirts.html">T-Shirts</a></li>
+          <li><a href="https://cafans.com/category-914-Jackets.html">Jacken</a></li>
+          <li><a href="https://cafans.com/category-915-Pants%2FShorts.html">Hosen &amp; Shorts</a></li>
+          <li><a href="https://cafans.com/category-916-Headwear.html">Caps &amp; Mützen</a></li>
+          <li><a href="https://cafans.com/category-917-Sets.html">Sets</a></li>
+          <li><a href="https://cafans.com/category-918-underwear%2Funderpants.html">Unterwäsche</a></li>
+          <li><a href="https://cafans.com/category-919-Jersey.html">Trikots</a></li>
+          <li><a href="https://cafans.com/category-920-Accessories.html">Accessoires</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <section class="wrap hero" aria-labelledby="titel">
+      <div>
+        <h1 id="titel">FansBuy spreadsheet</h1>
+        <p>Wähle eine Kategorie und vergleiche passende Artikel anhand von Maßen, Material und Fotos. Dieser deutschsprachige Ratgeber erklärt, welche Angaben du bei Sneakern, Kleidung und Accessoires vor der Bestellung prüfen kannst.</p>
+        <a class="button" href="https://www.cafans.com">CAFANS-Katalog öffnen</a>
+      </div>
+      <figure>
+        <img src="https://static.nike.com/a/images/t_web_pw_592_v2/f_auto/bhwrvokud9flh34cchb8/AIR%2BMAX%2B90.png" width="592" height="444" alt="Weißer Nike Air Max 90 in der Seitenansicht" fetchpriority="high" loading="eager">
+        <figcaption>Nike Air Max 90 · Beispiel für die Seitenansicht eines Sneakers</figcaption>
+      </figure>
+    </section>
+
+    <section class="wrap rule" aria-labelledby="details">
+      <h2 id="details">Welche Details zeigen Produktbilder?</h2>
+      <p>Die Markenbilder dienen als Modellbeispiele. Prüfe die Fotos und Angaben des jeweiligen Angebots separat.</p>
+      <div class="gallery">
+        <figure>
+          <img src="https://jp.louisvuitton.com/images/is/image/lv/1/PP_VP_L/louis-vuitton-monogram-essential-cap--M77590_PM2_Front%20view.png?hei=400&amp;wid=400" width="400" height="400" loading="lazy" decoding="async" alt="Blaue Louis Vuitton Monogram Essential Cap mit Schirm">
+          <figcaption>Louis Vuitton · Schirmform und Verstellbereich der Cap</figcaption>
+        </figure>
+        <figure>
+          <img src="https://media.gucci.com/style/DarkGray_Center_0_0_1200x1200/1785343518/A009U9_XJH31_2064_006_100_0000_Light-printed-cotton-jersey-t-shirt.jpg" width="1200" height="1200" loading="lazy" decoding="async" alt="Beigebraunes Gucci T-Shirt mit GG-Muster">
+          <figcaption>Gucci · Musterverlauf und Ausschnitt beim T-Shirt</figcaption>
+        </figure>
+        <figure>
+          <img src="https://assets.hermes.com/is/image/hermesproduct/bracelet-clic-h--700001F%204P-front-1-300-0-1000-1000_b.jpg" width="1000" height="1000" loading="lazy" decoding="async" alt="Hermès Clic H Armreif mit H-förmigem Verschluss">
+          <figcaption>Hermès · Form und Verschluss des Armreifs</figcaption>
+        </figure>
+        <figure>
+          <img src="https://assets.christiandior.com/is/image/diorprod/113J698A0531C989_E01-2?%24default_GHC%24=&amp;bfc=on&amp;crop=471%2C149%2C1052%2C1539&amp;qlt=80&amp;wid=400" width="400" height="585" loading="lazy" decoding="async" alt="Schwarzer Dior CD Icon Hoodie mit Kapuze und Kängurutasche">
+          <figcaption>Dior · Kapuze, Bündchen und Tasche am Hoodie</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="wrap rule" aria-labelledby="ratgeber">
+      <h2 id="ratgeber">Kaufratgeber für Größen, QC und Versand</h2>
+      <div class="articles">
+        <article>
+          <h3>Größen mit eigenen Maßen vergleichen</h3>
+          <p>Lege ein gut sitzendes T-Shirt flach hin. Miss die Brustweite von Achsel zu Achsel und die Länge von der Schulter bis zum Saum. Prüfe in der Größentabelle, ob Brustweite oder Brustumfang angegeben ist. Bei einem Set vergleichst du Oberteil und Hose einzeln.</p>
+          <p>Bei Sneakern hilft die Länge einer herausnehmbaren Einlegesohle aus einem passenden Paar. Für Caps misst du den Kopfumfang dort, wo die Kappe sitzt. Beim Armreif prüfst du den Innenumfang und den Verschluss.</p>
+        </article>
+        <article>
+          <h3>QC-Fotos und Gesamtkosten prüfen</h3>
+          <p>Vergleiche zuerst Artikelnummer, Farbe und Größe. Sieh dir auf den QC-Fotos anschließend die Nähte, den Aufdruck und bei Schuhen beide Sohlen an. Bitte bei unklarer Passform um ein Foto mit Maßband an der betreffenden Stelle.</p>
+          <p>Für Lieferungen nach Deutschland, Österreich oder in die Schweiz wählst du das tatsächliche Zielland in der Versandabfrage. Prüfe, ob der Dienst das tatsächliche Gewicht oder das Volumengewicht berechnet und welche Kosten vor der Zahlung ausgewiesen werden.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="wrap rule" aria-labelledby="faq">
+      <h2 id="faq">Häufige Fragen zum FansBuy spreadsheet</h2>
+      <details open>
+        <summary>Was ist ein FansBuy spreadsheet?</summary>
+        <p>Ein FansBuy spreadsheet ist eine nach Kategorien geordnete Sammlung von Produktverweisen. Sie dient als Ausgangspunkt für den Vergleich von Artikeln, Varianten und verfügbaren Produktinformationen.</p>
+      </details>
+      <details>
+        <summary>Wie prüfe ich, ob ein Produktlink zur richtigen Variante führt?</summary>
+        <p>Öffne die Produktseite und vergleiche Modell, Farbe, Größe und Artikelnummer. Prüfe die ausgewählte Variante erneut, wenn sich beim Wechsel der Größe das Foto oder die Beschreibung ändert.</p>
+      </details>
+      <details>
+        <summary>Was kann ich auf QC-Fotos erkennen?</summary>
+        <p>QC-Fotos können sichtbare Merkmale wie Nähte, Aufdrucke und die Sohlenform zeigen. Ein Foto allein reicht für einen Echtheitsnachweis nicht aus.</p>
+      </details>
+      <details>
+        <summary>Wovon hängen die Versandkosten nach Deutschland ab?</summary>
+        <p>Zielland, Versanddienst, Gewicht und Paketmaße beeinflussen die Versandkosten. Prüfe vor der Zahlung die aktuelle Schätzung und welche weiteren Abgaben oder Gebühren im Gesamtbetrag enthalten sind.</p>
+      </details>
+    </section>
+  </main>
+  <footer>
+    <div class="wrap"><a href="https://www.cafans.com">Zum CAFANS-Produktkatalog</a></div>
+  </footer>
+</body>
+</html>
